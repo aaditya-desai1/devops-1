@@ -1,0 +1,15 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+*.pem
+
+terraform.tfvars
+terraform.tfvars.json
+
+.terraform/
+*.tfstate
+*.tfstate.*
+*.pem
+group_id.txt

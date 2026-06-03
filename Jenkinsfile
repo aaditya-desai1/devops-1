@@ -2,12 +2,22 @@ pipeline {
     agent any
 
     stages {
-        stage('Environment') {
+
+        stage('Terraform Init') {
             steps {
-                sh 'whoami'
-                sh 'pwd'
-                sh 'terraform version'
-                sh 'aws --version'
+                sh 'terraform init'
+            }
+        }
+
+        stage('Terraform Validate') {
+            steps {
+                sh 'terraform validate'
+            }
+        }
+
+        stage('Terraform Plan') {
+            steps {
+                sh 'terraform plan'
             }
         }
     }

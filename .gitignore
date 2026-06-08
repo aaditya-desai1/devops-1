@@ -13,3 +13,4 @@ terraform.tfvars.json
 *.tfstate.*
 *.pem
 group_id.txt
+ec2id.txt

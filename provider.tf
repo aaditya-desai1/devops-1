@@ -10,6 +10,5 @@ terraform {
 }
 
 provider "aws" {
-  profile = "jenkins-terraform"
   region  = "ap-south-1"
 }
